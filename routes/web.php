@@ -12,7 +12,16 @@ Route::get('/tentang', function () {
     });
 
 Route::get('/Kontak', function() {
-
 return view('contact');
-
 });
+Route::get('/profil', function () {
+    return view('profil');
+});
+Route::get('/katalog', function () {
+    return view('katalog');
+});
+Route::get('/bantuan', function () {
+    return view('bantuan');
+});
+
+
