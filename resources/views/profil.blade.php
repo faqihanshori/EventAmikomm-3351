@@ -14,7 +14,7 @@
             <a href="/profil" class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition shadow">Profil</a>
             <a href="/katalog" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow">Katalog</a>
             <a href="/bantuan" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow">Bantuan</a>
-            <a href="/kontak" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow">Kontak</a>
+            <a href="/contact" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow">Kontak</a>
         </nav>
 
         <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transform hover:-translate-y-1 transition duration-300">
@@ -23,9 +23,9 @@
                 <div class="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-500 text-4xl font-bold">
                     P </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-gray-700">Nama Anda</h2>
-                    <p class="text-gray-500">NIM: 12.34.5678</p>
-                    <p class="text-gray-500 mt-2">Mahasiswa Program Studi Informatika yang sedang belajar Laravel dan Tailwind CSS.</p>
+                    <h2 class="text-xl font-semibold text-gray-700">Muhammad Faqih Anshori</h2>
+                    <p class="text-gray-500">NIM: 24.12.3351</p>
+                    <p class="text-gray-500 mt-2">Mahasiswa Program Studi Sistem Informasi yang sedang belajar Laravel dan Tailwind CSS.</p>
                 </div>
             </div>
         </div>

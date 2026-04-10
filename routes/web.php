@@ -11,7 +11,7 @@ Route::get('/tentang', function () {
     return 'h1>Ini adalah Halaman Tentang Aplikasi Event Hub</h1>';
     });
 
-Route::get('/Kontak', function() {
+Route::get('/contact', function() {
 return view('contact');
 });
 Route::get('/profil', function () {

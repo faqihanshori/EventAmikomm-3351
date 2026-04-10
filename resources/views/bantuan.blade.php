@@ -14,7 +14,7 @@
             <a href="/profil" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow">Profil</a>
             <a href="/katalog" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow">Katalog</a>
             <a href="/bantuan" class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition shadow">Bantuan</a>
-            <a href="/kontak" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow">Kontak</a>
+            <a href="/contact" class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition shadow">Kontak</a>
         </nav>
 
         <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
