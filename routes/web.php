@@ -6,6 +6,8 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EventController as AdminEventController;
+use App\Http\Controllers\Admin\CategoryController as AdminCategoryController;
+use App\Http\Controllers\Admin\PartnerController as AdminPartnerController;
 
 // ── USER AREA ────────────────────────────────────────
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -30,4 +32,10 @@ Route::get('/bantuan',  fn() => view('bantuan'));
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'show'])->name('dashboard');
     Route::resource('events', AdminEventController::class);
+
+    // Soal 1: CRUD Kategori
+    Route::resource('categories', AdminCategoryController::class);
+
+    // Soal 2: CRUD Partner
+    Route::resource('partners', AdminPartnerController::class);
 });
