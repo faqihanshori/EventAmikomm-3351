@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\EventController;
@@ -27,7 +28,25 @@ Route::get('/bantuan',  fn() => view('bantuan'));
 //  GET    /admin/events/{event}/edit → edit()     form edit
 //  PUT    /admin/events/{event}      → update()   simpan ubah
 //  DELETE /admin/events/{event}      → destroy()  hapus
+// Route::prefix('admin')->name('admin.')->group(function () {
+//     Route::get('/', [DashboardController::class, 'show'])->name('dashboard');
+//     Route::resource('events', AdminEventController::class);
+// });
+
+Route::get('/login', function () {
+return redirect()->route('admin.login');
+})->name('login');
+// Grouping untuk URL berawalan /admin
 Route::prefix('admin')->name('admin.')->group(function () {
-    Route::get('/', [DashboardController::class, 'show'])->name('dashboard');
-    Route::resource('events', AdminEventController::class);
+// Rute Login bebas akses
+Route::get('login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('login', [AuthController::class, 'login'])->name('login.post');
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
+// Mengamankan Route Administrasi di balik tembok (Middleware)
+Route::middleware(['auth', 'admin'])->group(function () {
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::resource('events', AdminEventController::class);
+// Route::get('transactions', [TransactionController::class, 'index'])->name('transactions.index');
+});
 });
