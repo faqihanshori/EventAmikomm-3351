@@ -40,3 +40,4 @@ Tugas 8
 https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/admin/login
 
 Tugas 10
+https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/admin/transactions
