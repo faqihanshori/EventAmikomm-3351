@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 class EventController extends Controller
 {
     //
-    public function show()
+    public function show($id)
     {
-        return view('event-detail');
+        $event = \App\Models\Event::with('category')->findOrFail($id);
+        return view('event-detail', compact('event'));
     }
 
     public function checkout(){

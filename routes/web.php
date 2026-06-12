@@ -11,7 +11,8 @@ use App\Http\Controllers\Admin\EventController as AdminEventController;
 // ── USER AREA ────────────────────────────────────────
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/event/{id}', [EventController::class, 'show'])->name('events.show');
-Route::get('/checkout', [EventController::class, 'checkout'])->name('checkout');
+Route::get('/checkout/{event}', [App\Http\Controllers\CheckoutController::class, 'create'])->name('checkout.create');
+Route::post('/checkout/{event}', [App\Http\Controllers\CheckoutController::class, 'store'])->name('checkout.store');
 Route::get('/my-ticket', [TicketController::class, 'show'])->name('ticket');
 
 Route::get('/tentang', fn() => '<h1>Tentang AmikomEventHub</h1>');
@@ -47,6 +48,6 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware(['auth', 'admin'])->group(function () {
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::resource('events', AdminEventController::class);
-// Route::get('transactions', [TransactionController::class, 'index'])->name('transactions.index');
+Route::get('transactions', [\App\Http\Controllers\Admin\TransactionController::class, 'index'])->name('transactions.index');
 });
 });

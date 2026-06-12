@@ -28,7 +28,6 @@ Halaman Detail : https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/event-
 
 Halaman Checkout : https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/checkout.html
 
-
 Tugas 3
 
 https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/admin
@@ -36,3 +35,8 @@ https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/admin
 Tugas 4
 
 https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/admin
+
+Tugas 8
+https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/admin/login
+
+Tugas 10

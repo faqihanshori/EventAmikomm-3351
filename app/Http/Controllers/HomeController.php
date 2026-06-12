@@ -9,6 +9,7 @@ class HomeController extends Controller
     //
     public function index()
     {
-        return view('welcome');
+        $events = \App\Models\Event::with('category')->latest()->take(6)->get();
+        return view('welcome', compact('events'));
     }
 }
