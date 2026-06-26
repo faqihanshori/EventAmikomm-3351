@@ -60,8 +60,10 @@ class CheckoutTest extends TestCase
             'customer_phone' => '081234567890',
         ]);
 
-        // Asserts redirect to home as per store() method redirection
-        $response->assertRedirect('/');
+        // Setelah Midtrans integration, store() akan redirect ke /payment/{order_id}
+        // bukan ke '/' seperti sebelumnya. Cukup pastikan redirectnya bukan 422/500.
+        $response->assertRedirect();
+        $this->assertStringContainsString('/payment/TRX-', $response->headers->get('Location'));
 
         // Asserts transaction was recorded in the database
         $this->assertDatabaseHas('transactions', [
