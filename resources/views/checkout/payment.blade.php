@@ -57,5 +57,7 @@
         100% { transform: scale(1); }
     }
     .animate-bounce-in { animation: bounce-in 0.4s ease-out forwards; }
+
+    
 </style>
 @endsection
