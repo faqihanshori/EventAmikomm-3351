@@ -44,3 +44,8 @@ https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/admin/transactions
 
 tugas 11
 
+hamalan menu pemesanan : https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/checkout/3
+
+halaman pembayaran midtrans : https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/payment/TRX-1782582117-EOXoW
+
+laporan transaksi : https://eventamikomm-3351-main-6hqtao.free.laravel.cloud/admin/transactions
